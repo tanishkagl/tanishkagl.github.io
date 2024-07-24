@@ -1,0 +1,236 @@
+/* STYLE SECTIONING TAGS */
+body {
+  background-color: #FEFAE0;
+  margin: 0% 5% 5% 5%;
+}
+
+main {
+  margin: 0% 20%;
+}
+
+/* STYLE TEXT */
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #764f28;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #363636;
+}
+
+.heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #59630d;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400; 
+}
+
+a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-decoration: underline;
+  color: #485106;
+}
+
+/* STYLE IMAGES */
+
+/* TEXT RIGHT OF IMAGE FLEXBOX */
+
+/* version 1
+.project {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.text {
+  margin: 0px;
+  padding: 0px 50px 0px 0px;
+  float: left;
+}
+
+.images {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  clear: both;
+  float: right;
+}
+
+.images img {
+  padding: 10px;
+  height: 400px;
+  float: right;
+}
+*/
+
+/* version 2 */
+.project {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.image {
+  margin: 0px;
+  padding: 10px 10px 10px 20px;
+  height: 400px;
+}
+
+.image2 {
+  margin: 0px;
+  padding: 10px 20px 10px 0px;
+  height: 400px;
+}
+
+/* HOMEPAGE FLEXBOX */
+
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0px;
+  padding: 0px;
+  min-width:1200px;
+  max-width:1500px;
+}
+
+.grid > div {
+  margin: 0px;
+  padding-right: 2%;
+  font-size: 30px;
+}
+
+.grid img {
+  max-height: 400px;
+  padding: 0px;
+  align: center;
+}
+
+/* STYLE NAV BAR */
+
+#name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  padding: 14px 16px 14px 0px;
+  
+}
+
+#name: hover {
+  text-decoration: none;
+}
+
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0px;
+}
+
+nav li {
+  display: inline;
+  margin: 10px;
+  padding: 0px;
+}
+
+nav li a {
+  float: left;
+  color: #485106;
+  text-align: center;
+  margin: 0px;
+  padding: 14px 16px;
+  text-decoration: transparent;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700px;
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-decoration-color: #4f3c0c;
+}
+
+.link:active {
+  text-decoration: underline;
+  text-decoration-color: #4f3c0c;
+}
+
+/* ABOUT PAGE FLEXBOX */
+.project2 {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin: 0% 10%;
+}
+
+.text2 {
+  padding: 0px 50px 0px 0px;
+  float: left;
+}
+
+.images2 {
+  display: block;
+  padding: 0px;
+  float: right;
+}
+
+#headshot {
+  border-radius: 15%;
+  height: 400px;
+  float: right;
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid #754b1f;
+  color: #754b1f;
+  padding: 15px 32px;
+  border-radius: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:hover {
+  background-color: #754b1f;
+  border: 2px solid #000000;
+  color: white;
+}
+
+.sections {
+  display: inline-block;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 40px;
+  margin: 0% 15%;
+}
+
+.list {
+  padding: 30px;
+  float: left;
+  text-align: left;
+}
+
+.list li {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #485106;
+}
