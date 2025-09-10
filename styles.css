@@ -243,9 +243,13 @@ header h1 {
 /* =========================
    Buttons (About Me / Explore)
 ========================= */
+.explore-btn-container {
+  text-align: center;
+  margin: 2rem 0 2rem 0 !important;
+}
+
 .btn {
   display: inline-block;
-  margin: 2rem 0 2rem 0;
   padding: 0.6rem 1.2rem;
   background-color: var(--btn-bg);
   color: var(--btn-color);
@@ -456,6 +460,7 @@ footer p {
     text-align: left;
   }
 }
+
 
 
 
