@@ -75,6 +75,18 @@ main, .my-work, .about {
   margin: 0 auto;
 }
 
+@media (max-width: 1200px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  }
+}
+
+@media (max-width: 700px) {
+  .projects-grid {
+    grid-template-columns: 1fr; /* 1 per row */
+  }
+}
+
 /* =========================
    Navbar
 ========================= */
@@ -268,10 +280,9 @@ header h1 {
 }
 
 .about-image img {
-  width: auto;
-  max-width: 250px;
-  max-height: 400px;
-  object-fit: cover; 
+  width: 100%;
+  max-width: clamp(180px, 25vw, 250px);
+  height: auto;
   border-radius: 25px;
 }
 
@@ -444,4 +455,5 @@ footer p {
     text-align: left;
   }
 }
+
 
