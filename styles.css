@@ -1,0 +1,447 @@
+/* =========================
+   Root Color Palette
+========================= */
+:root {
+  --primary1: #542F76; /* main purple */
+  --primary2: #8E67B3; /* secondary purple */
+  --primary3: #C1A2DE; /* light purple */
+  --accent1: #727BC6;
+  --accent2: #9097D4;
+  --accent3: #B4B8E1;
+  --bg-color: #fff;
+  --text-color: #111;
+
+  /* Button Colors */
+  --btn-bg: #FFFFFF;
+  --btn-color: #9097D4;
+  --btn-hover-bg: #9097D4;
+  --btn-hover-color: #FFFFFF;
+
+  /* Navbar Colors */
+  --navbar-bg: #F1E8FA;
+  --navbar-text: #542F76;
+  --navbar-btn-bg: #8E67B3;
+}
+
+
+/* =========================
+   Global Styles
+========================= */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'McLaren', cursive;
+  color: var(--primary1);
+  margin-bottom: 1rem;
+}
+
+section {
+  margin: 4rem 0;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
+main, .my-work, .about {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  flex: 1;
+}
+
+.hero {
+  text-align: center;
+  margin-top: 10vh;
+  padding: 0 1rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* =========================
+   Navbar
+========================= */
+header {
+  background-color: var(--navbar-bg);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  flex-wrap: nowrap;
+  padding: 1rem 2rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  color: var(--navbar-text);
+  margin: 0;
+}
+
+.nav-links {
+  display: flex; 
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: var(--navbar-text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--primary2);
+}
+
+.nav-links .btn-contact {
+  padding: 0.5rem 1.2rem;
+  background-color: var(--navbar-btn-bg);
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.nav-links .btn-contact:hover {
+  background-color: var(--primary2);
+  color: #fff;
+}
+
+/* =========================
+   Hero / Home Page
+========================= */
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary1);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* =========================
+   Hero Section
+========================= */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 5vh;
+}
+
+.hero-content {
+  max-width: 600px;
+  text-align: left;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  color: var(--primary1);
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-image img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* =========================
+   Featured Projects
+========================= */
+.featured-projects {
+  margin-top: 5rem;
+}
+
+.featured-projects h2 {
+  font-family: 'McLaren', cursive;
+  color: var(--primary2);
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.featured-project {
+  background: var(--bg-color);
+  border: 1px solid var(--primary3);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.featured-project h3 {
+  font-family: 'McLaren', cursive;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.featured-project p {
+  font-family: 'Inter', sans-serif;
+}
+
+/* =========================
+   Responsive adjustments
+========================= */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-content {
+    max-width: 100%;
+  }
+  .hero-image img {
+    max-width: 80%;
+    margin-top: 2rem;
+  }
+}
+
+/* =========================
+   Buttons (About Me / Explore)
+========================= */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: var(--btn-bg);
+  color: var(--btn-color);
+  border: 2px solid var(--btn-color);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--btn-hover-bg);
+  color: var(--btn-hover-color);
+  border-color: var(--btn-hover-bg);
+}
+
+/* =========================
+   About Page / Toolbox Buttons
+========================= */
+
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto 0 auto;
+  box-sizing: border-box;
+}
+
+.about-image {
+  flex: 0 0 auto;
+  text-align: left;
+}
+
+.about-image img {
+  width: auto;
+  max-width: 250px;
+  max-height: 400px;
+  object-fit: cover; 
+  border-radius: 25px;
+}
+
+/* Responsive: stack image on mobile */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .about-image {
+    margin-top: 1rem;
+    text-align: left;
+  }
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.tool-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tool-btn {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  background: var(--accent2);
+  color: #fff;
+  font-size: 0.9rem;
+  transition: transform 0.2s, background 0.3s;
+  cursor: default;
+}
+
+.tool-btn:hover {
+  background: var(--accent3);
+  transform: scale(1.05);
+}
+
+/* =========================
+   My Work Page / Projects
+========================= */
+.project-card {
+  background: var(--bg-color);
+  border: 1px solid var(--primary3);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.project-category {
+  display: inline-block;
+  background: var(--accent1);
+  color: #fff;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.project-card h3 {
+  margin: 0.5rem 0;
+}
+
+.project-card p {
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 1rem;
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+  background-color: #F1E8FA;
+  padding: 2rem;
+  text-align: left;
+  font-size: 0.9rem;
+  color: #542F76;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* =========================
+   Project Page Hero
+========================= */
+.project-hero {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.project-hero-img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto 1.5rem auto;
+}
+
+.project-hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-hero-text .small-desc {
+  font-size: 1.1rem;
+  color: var(--primary2);
+}
+
+/* =========================
+   Potential Solutions Image
+========================= */
+.solutions-img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 12px;
+}
+
+/* =========================
+   Detailed Sections
+========================= */
+.detail-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+}
+
+.detail-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.detail-image {
+  flex: 1;
+  text-align: right;
+  min-width: 300px;
+}
+
+.detail-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .detail-container {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .detail-image {
+    text-align: left;
+  }
+}
+
