@@ -1,4 +1,4 @@
-# Tanishka Gangadharan Latha Portfolio
+# Tanishka Gangadharan Latha's Portfolio
 Welcome to my Portfolio Website! This site showcases my projects, skills, and contact information.
 
 ## Pages
