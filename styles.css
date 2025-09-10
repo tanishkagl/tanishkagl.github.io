@@ -245,6 +245,7 @@ header h1 {
 ========================= */
 .btn {
   display: inline-block;
+  margin: 2rem 0 2rem 0;
   padding: 0.6rem 1.2rem;
   background-color: var(--btn-bg);
   color: var(--btn-color);
@@ -455,5 +456,6 @@ footer p {
     text-align: left;
   }
 }
+
 
 
