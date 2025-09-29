@@ -37,6 +37,7 @@ body {
   margin: 0;
   padding: 0;
   transition: background 0.3s, color 0.3s;
+  cursor: url('images/blue-cursor.png'), auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -488,6 +489,7 @@ footer p {
     text-align: center;
   }
 }
+
 
 
 
